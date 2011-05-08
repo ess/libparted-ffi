@@ -9,7 +9,7 @@ module Parted
     attach_function :ped_device_cache_remove, [:pointer], :void
     attach_function :ped_device_check, [:pointer, :pointer, :long_long, :long_long], :long_long
     attach_function :ped_device_close, [:pointer], :int 
-    attach function :ped_device_destroy, [:pointer], :void
+    attach_function :ped_device_destroy, [:pointer], :void
     attach_function :ped_device_end_external_access, [:pointer], :int
     attach_function :ped_device_free_all, [], :void
     attach_function :ped_device_get, [:string], :pointer
